@@ -16,6 +16,11 @@ final class Message: SQLiteModel {
     var author: String
     var message: String
     var sentTime: Date?
+    
+    init(author: String, message: String) {
+        self.author = author
+        self.message = message
+    }
 
 }
 
